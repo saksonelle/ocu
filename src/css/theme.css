@@ -1,0 +1,52 @@
+:root {
+  --bg: #e5e5e5;
+  --white: #fff;
+  --main-dark-blue: #212872;
+  --main-gray: #e9e9f1;
+  --main-blue: #4759ff;
+  --secondary-orange: #ff6012;
+  --additional-light-orange: #ffd2c7;
+  --additional-aliceblue: #d6e4ff;
+  --additional-light-blue: #f0f5ff;
+  --additional-dark: #595959;
+  --additional-gray: #8c8c8c;
+  --black: #000;
+  --font-dark-blue: #061178;
+  --font-dark-second: #212872;
+  --font-family-h1: "Source Sans Pro Semibold", sans-serif;
+  --font-family-bold: "Sarala Bold", sans-serif;
+  --font-family-regular: "Sarala Regular", sans-serif;
+}
+
+@font-face {
+  font-family: "Source Sans Pro Semibold";
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"),
+    url("../font/sourcesanspro/sourcesansprosemibold.woff2") format("woff2"),
+    url("../font/sourcesanspro/sourcesansprosemibold.woff") format("woff"),
+    url("../font/sourcesanspro/sourcesansprosemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarala Regular";
+  src: local("Sarala Regular"),
+    url("../font/sarala/Sarala-Regular.woff2") format("woff2"),
+    url("../font/sarala/Sarala-Regular.woff") format("woff"),
+    url("../font/sarala/Sarala-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sarala Bold";
+  src: local("Sarala Bold"),
+    url("../font/sarala/Sarala-Bold.woff2") format("woff2"),
+    url("../font/sarala/Sarala-Bold.woff") format("woff"),
+    url("../font/sarala/Sarala-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

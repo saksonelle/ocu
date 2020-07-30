@@ -1,0 +1,34 @@
+.mobileVersions {
+  display: flex;
+}
+
+.mobileVersions__phone-holder {
+  width: 100%;
+  padding: 100px;
+}
+
+.mobileVersions__phone {
+  width: 251px;
+  height: 523px;
+  box-shadow: 0 7px 60px rgba(96, 107, 118, 0.23), 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  z-index: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mobileVersions__phone:before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -1px;
+  right: -3px;
+  bottom: -2px;
+  background: url("../img/mockup-mobile.png") no-repeat;
+}
+
+.mobileVersions__phone-img {
+  max-width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}

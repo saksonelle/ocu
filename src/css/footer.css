@@ -1,0 +1,265 @@
+.footer-wrapper {
+  background: url(../img/bg-contact-section.svg) no-repeat left center;
+  background-position-y: 300px;
+  padding-top: 70px;
+  padding-bottom: 12px;
+}
+
+.container.footer {
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.social--mark {
+  margin-right: 44px;
+}
+
+.social--mark .social__link {
+  position: relative;
+}
+
+.social--mark .social__link::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--main-blue);
+  position: absolute;
+  right: -25px;
+  top: 7px;
+}
+
+.social__link--medium {
+  width: 19px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: var(--additional-gray);
+  z-index: 999;
+}
+
+@media screen and (max-width: 969px) {
+  .social--mark .social__link::after {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .footer__col:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer .footer__col:nth-child(2) {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .social--mark {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .social--mark-last {
+    width: 100%;
+  }
+
+  .social:last-child {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+.contact .h2 {
+  color: var(--secondary-orange);
+}
+
+.contact .h2::after {
+  content: "Contact";
+  top: 17px;
+}
+
+.social--right {
+  margin-left: auto;
+}
+
+.footer__col:nth-child(1) {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.social {
+  width: 100%;
+}
+
+.footer__col:nth-child(2) {
+  width: 70%;
+}
+
+.footer__col:nth-child(2) .social {
+  justify-content: flex-end;
+}
+
+.social__link {
+  font-size: 14px;
+  color: var(--main-blue);
+}
+
+.contact {
+  padding-bottom: 120px;
+}
+
+.contact .h3 {
+  margin-bottom: 24px;
+}
+
+.contact-info__form {
+  margin-bottom: 47px;
+}
+
+.form__item {
+  margin-bottom: 10px;
+  border: 1px solid var(--additional-light-orange);
+  border-radius: 2px;
+  font-size: 16px;
+  color: var(--black);
+  padding: 10px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.form__item:hover {
+  border: 1px solid var(--secondary-orange);
+}
+
+.form__item:focus {
+  outline: none;
+  border: 1px solid var(--secondary-orange);
+}
+
+.form__textarea {
+  margin-bottom: 24px;
+  height: 97px;
+  resize: none;
+}
+
+::placeholder {
+  color: var(--additional-gray);
+}
+
+:-ms-input-placeholder {
+  color: var(--additional-gray);
+}
+
+::-ms-input-placeholder {
+  color: var(--additional-gray);
+}
+
+.contact-info .text-normal {
+  display: block;
+}
+
+.contact-info__list {
+  color: var(--main-blue);
+}
+
+.contact-info__item {
+  margin-bottom: 24px;
+  padding-left: 42px;
+  position: relative;
+}
+
+.contact-info__item::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.contact-info__item:nth-child(1)::before {
+  background: url(../img/icons/email.svg);
+}
+
+.contact-info__item:nth-child(2)::before {
+  background: url(../img/icons/phone.svg);
+}
+
+.contact-info__item:nth-child(3)::before {
+  background: url(../img/icons/location.svg);
+}
+
+.contact-info__point {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--secondary-orange);
+  position: relative;
+}
+
+.contact-info__form {
+  width: 53%;
+}
+
+.contact-info__block {
+  width: 47%;
+  padding-left: 109px;
+}
+
+@media screen and (max-width: 861px) {
+  .footer-wrapper {
+    background: none;
+  }
+
+  .contact {
+    padding-bottom: 62px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info__block {
+    padding-left: 0;
+  }
+
+  .contact-info__point {
+    font-size: 15px;
+  }
+
+  .contact-info .text-normal {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info__block {
+    padding-left: 0;
+  }
+
+  .contact-info__block,
+  .contact-info__form {
+    width: 100%;
+  }
+
+  .contact .h2::after {
+    top: -18px;
+  }
+}

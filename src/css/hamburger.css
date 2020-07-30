@@ -1,0 +1,81 @@
+.ham {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  top: -19px;
+  right: 0px;
+  z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+  .ham {
+    display: block;
+  }
+}
+
+.ham_line {
+  position: absolute;
+  left: 6px;
+  width: 28px;
+  height: 2px;
+  background-color: #212872;
+  border-radius: 2px;
+}
+
+.ham_line1 {
+  top: 10px;
+  transition: all 0.3s;
+}
+
+.ham_line2 {
+  top: 18px;
+}
+
+.ham_line3 {
+  top: 26px;
+  transition: all 0.3s;
+}
+
+.clicked .ham_line1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.clicked .ham_line2 {
+  width: 0px;
+}
+
+.clicked .ham_line3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+.menu__wrap.clicked {
+  opacity: 1;
+  background-color: var(--white);
+  position: fixed;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 15px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  ul.menu__wrap {
+    display: none;
+  }
+}
+
+.menu__wrap.clicked .menu__link {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+}

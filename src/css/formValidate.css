@@ -1,0 +1,45 @@
+.warning {
+  color: #fa8c16;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #1c94ff;
+  padding: 4px 8px;
+  border: none;
+  box-shadow: 2px 1px 1px #d3d3d3;
+  color: #fff;
+  outline: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.has-success .form-control {
+  border: 1px solid green;
+}
+
+#form .has-danger .form-control {
+  border: 1px solid #f5222d;
+}
+
+.has-danger .form-control:focus {
+  outline: none;
+  border: 1px solid var(--secondary-orange);
+}
+
+.form-group .text-help {
+  color: #f5222d;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.inline-label label {
+  display: inline;
+}
+
+.pristine-error {
+  display: table;
+}
